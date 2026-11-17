@@ -56,9 +56,6 @@ actualiserBoutonsEquipe();
 
 
 
-
-
-
 // -------------------------------------------------------------
 // 4. FILTRE
 // Les boutons de type n'affichent que les créatures de ce type ;

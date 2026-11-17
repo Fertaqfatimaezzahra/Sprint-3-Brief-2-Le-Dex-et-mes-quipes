@@ -15,7 +15,6 @@ afficherCreatures(data)
 });
 
 
-
 try{
 
 let data = await getcharacters();

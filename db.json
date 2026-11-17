@@ -1,0 +1,102 @@
+
+{
+  "creatures": [
+    {
+      "id": 1,
+      "name": "Dark Magician",
+      "type": "DARK",
+      "image": "https://images.ygoprodeck.com/images/cards/46986414.jpg",
+      "stats": { "hp": 200, "attack": 250, "defense": 210 },
+      "description": "The ultimate wizard in terms of attack and defense."
+    },
+    {
+      "id": 2,
+      "name": "Blue-Eyes White Dragon",
+      "type": "LIGHT",
+      "image": "https://images.ygoprodeck.com/images/cards/89631139.jpg",
+      "stats": { "hp": 250, "attack": 250, "defense": 250 },
+      "description": "A legendary dragon known for its immense power."
+    },
+    {
+      "id": 3,
+      "name": "Red-Eyes Black Dragon",
+      "type": "DARK",
+      "image": "https://images.ygoprodeck.com/images/cards/74677422.jpg",
+      "stats": { "hp": 200, "attack": 240, "defense": 200 },
+      "description": "A powerful black dragon with destructive potential."
+    },
+    {
+      "id": 4,
+      "name": "Dark Magician Girl",
+      "type": "DARK",
+      "image": "https://images.ygoprodeck.com/images/cards/38033121.jpg",
+      "stats": { "hp": 170, "attack": 200, "defense": 170 },
+      "description": "A talented spellcaster who supports Dark Magician."
+    },
+    {
+      "id": 5,
+      "name": "Summoned Skull",
+      "type": "DARK",
+      "image": "https://images.ygoprodeck.com/images/cards/70781052.jpg",
+      "stats": { "hp": 180, "attack": 250, "defense": 120 },
+      "description": "A fiend with dark powers and a fearsome presence."
+    },
+    {
+      "id": 6,
+      "name": "Exodia the Forbidden One",
+      "type": "DARK",
+      "image": "https://images.ygoprodeck.com/images/cards/33396948.jpg",
+      "stats": { "hp": 120, "attack": 100, "defense": 100 },
+      "description": "One of the five legendary pieces of Exodia."
+    },
+    {
+      "id": 7,
+      "name": "Kuriboh",
+      "type": "DARK",
+      "image": "https://images.ygoprodeck.com/images/cards/40640057.jpg",
+      "stats": { "hp": 100, "attack": 30, "defense": 20 },
+      "description": "A small creature with surprising defensive abilities."
+    },
+    {
+      "id": 8,
+      "name": "Celtic Guardian",
+      "type": "EARTH",
+      "image": "https://images.ygoprodeck.com/images/cards/91152256.jpg",
+      "stats": { "hp": 150, "attack": 140, "defense": 120 },
+      "description": "An elf warrior skilled in sword combat."
+    },
+    {
+      "id": 9,
+      "name": "Buster Blader",
+      "type": "EARTH",
+      "image": "https://images.ygoprodeck.com/images/cards/78193831.jpg",
+      "stats": { "hp": 220, "attack": 250, "defense": 230 },
+      "description": "A legendary warrior specializing in defeating dragons."
+    },
+    {
+      "id": 10,
+      "name": "Gaia The Fierce Knight",
+      "type": "EARTH",
+      "image": "https://images.ygoprodeck.com/images/cards/6368038.jpg",
+      "stats": { "hp": 190, "attack": 230, "defense": 210 },
+      "description": "A powerful knight who charges into battle."
+    },
+    {
+      "id": 11,
+      "name": "Jinzo",
+      "type": "DARK",
+      "image": "https://images.ygoprodeck.com/images/cards/77585513.jpg",
+      "stats": { "hp": 200, "attack": 240, "defense": 150 },
+      "description": "A machine-like monster that disables trap cards."
+    },
+    {
+      "id": 12,
+      "name": "Baby Dragon",
+      "type": "WIND",
+      "image": "https://images.ygoprodeck.com/images/cards/88819587.jpg",
+      "stats": { "hp": 100, "attack": 120, "defense": 70 },
+      "description": "A young dragon with potential for growth."
+    }
+  ],
+  "teams": []
+}
