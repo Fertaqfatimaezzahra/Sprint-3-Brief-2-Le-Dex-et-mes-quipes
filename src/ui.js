@@ -4,6 +4,8 @@
 // Écrivez votre code ici, fonctionnalité par fonctionnalité.
 // Une carte GitHub Projects et au moins un commit par fonctionnalité.
 
+import { createElement } from "react";
+
 // import { getcharacters} from "./src/services/API.js";
 
 // let data=[]
@@ -14,13 +16,13 @@
 // construisez la grille à partir du tableau `creatures`.
 
 
-let get_grid = document.getElementById("grid")
 
-export function afficherCreatures(liste) {
-  get_grid.innerHTML = "";
+
+export function afficherCreatures(liste , grid) {
+grid.innerHTML = "";
 
   liste.forEach(cart => {
-     get_grid.insertAdjacentHTML('beforeend', `<article data-id="${cart.id}"
+     grid.insertAdjacentHTML('beforeend', `<article data-id="${cart.id}"
     class=" dex-card flex flex-col gap-3 rounded-card bg-white p-3 pb-4 hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
     <div class=" character-zone relative flex h-36 items-center justify-center rounded-xl bg-brand-light">
       <img
@@ -463,5 +465,10 @@ afficherEquipe();
 // -----------------------------------------------------------  
 
 
+export function errormess(grid){
+ const paragr =  createElement("p")
+ paragr.textContent="the data is not here"
+  gird.append(paragr)
 
+}
 

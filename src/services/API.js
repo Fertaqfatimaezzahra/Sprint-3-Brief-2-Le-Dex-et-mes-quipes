@@ -1,39 +1,32 @@
-const url = "https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0";
-export async function getcharacters(offset = 0) {
-    const url = `https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=${offset}`; 
-   try {
-    const response = await fetch(url);
+import {errormess} from "../ui.js"
+import {grid} from "../main.js"
+const url = "http://localhost:3000";
+ export async function request(method, route, body=null){
+       const option= { 
+        methode:method,
+        headers : {"Content-Type": "application/json"}
+        };
+ if(body!=null){
+  option.body = JSON.stringify(body);
+ }
 
-    if (!response.ok) {
-      throw new Error(`Erreur ${response.status}`);
-    }
+ try{
+    const response = await fetch(`${url}${route}`,option);
+     if(!response.ok){
+      throw new Error ("data not found");
+     }
 
-    const result = await response.json();
-
-
-   const  newData= result.data.map((ele)=>transformeObj(ele))
-   return newData
-  } catch (error) {
-    throw error;
+  if(method==="DELETE"){
+    return;
   }
-}
-function transformeObj(obj){
-   return  {
-    id:obj.id  ,
+  return response.json();
+  
+ }catch(error){ 
+ errormess(grid)
+ }
+ }
 
-    name: obj.name,
-
-   type: obj.attribute ?? obj.type ?? "Unknown",
-
-    level: obj.level ?? 0,
-
-    stats: { hp:(obj.atk ?? 0) + (obj.def ?? 0), 
-        attack:obj.atk ?? 0, 
-        defence:obj.def ?? 0},
-
-    image: obj.card_images[0].image_url,
-
-    description: obj.desc
-  }
-}
-
+ export async function getCreatures(params){
+     const get = await request("GET",params);
+     return Promise.all(get) ;
+ }
